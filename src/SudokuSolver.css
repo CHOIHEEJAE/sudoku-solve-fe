@@ -1,0 +1,61 @@
+/* 기본 스타일 */
+.board {
+    /*display: flex;    !*grid-template-columns: repeat(9, 1fr); !* 9개의 열을 동일하게 나누기 *!*!*/
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    /*grid-template-columns: repeat(9, 1fr); !* 9개의 셀을 가로로 배열 *!*/
+    gap: 5px;
+    text-align: center;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    background-color: white;
+    outline: none;
+    margin : 2px;
+}
+
+.cell:focus {
+    border-color: #66ccff;
+}
+
+.solved-board {
+    margin-top: 20px;
+}
+
+.solved-cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    background-color: lightgreen;
+    margin: 2px;
+}
+
+/* 사용자 입력값을 표시하는 색상 */
+.input-cell {
+    background-color: lightyellow; /* 사용자 입력 값이 있는 셀 */
+}
+
+/* 기본 숫자 입력 필드 스타일 */
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
